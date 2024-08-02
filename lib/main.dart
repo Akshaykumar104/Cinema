@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:untitled/Models/top_rated_movies.dart';
 import 'Common/dataSaved.dart';
 import 'Screens/SplashScreen.dart';
-import 'Screens/watch_list.dart';
 
 void main() {
   runApp(const MyApp());

@@ -5,6 +5,8 @@ import '../Common/Utils.dart';
 import '../Common/dataSaved.dart';
 
 class FavoriteMoviesScreen extends StatelessWidget {
+  const FavoriteMoviesScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     var favoriteMovies = context.watch<FavoriteMoviesProvider>().favoriteMovies;
@@ -25,7 +27,7 @@ class FavoriteMoviesScreen extends StatelessWidget {
             leading: Image.network("$imageUrl${movie.posterPath}"),
             title: Text(
                 movie.originalTitle,
-              style: TextStyle(
+              style: const TextStyle(
                 fontWeight: FontWeight.bold,
               ),
             ),

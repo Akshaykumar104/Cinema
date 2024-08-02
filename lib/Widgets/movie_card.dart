@@ -20,16 +20,16 @@ class MovieCard extends StatelessWidget {
         backgroundColor: Colors.black,
         title: Text(
           headLineText,
-          style: TextStyle(color: Colors.white),
+          style: const TextStyle(color: Colors.white),
         ),
         actions: [
           IconButton(
-            icon: Icon(CupertinoIcons.heart_fill, color: Colors.red),
+            icon: const Icon(CupertinoIcons.heart_fill, color: Colors.red),
             onPressed: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => FavoriteMoviesScreen(),
+                  builder: (context) => const FavoriteMoviesScreen(),
                 ),
               );
             },
