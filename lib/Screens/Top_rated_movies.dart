@@ -25,6 +25,7 @@ class _HomeScreenState extends State<TopMovies> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        
         backgroundColor: Colors.black,
         title: const Text(
           "M O O V I Z",
