@@ -23,7 +23,12 @@ class FavoriteMoviesScreen extends StatelessWidget {
           var movie = favoriteMovies[index];
           return ListTile(
             leading: Image.network("$imageUrl${movie.posterPath}"),
-            title: Text(movie.originalTitle),
+            title: Text(
+                movie.originalTitle,
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           );
         },
       ),
